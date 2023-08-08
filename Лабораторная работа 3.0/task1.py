@@ -1,8 +1,7 @@
-# TODO Напишите функцию для поиска индекса товара
 def goods_indeks(spisok, search_item):
-    for i in spisok:
-        if i == search_item:
-            return spisok.index(i)
+    for index, item in enumerate(spisok):
+        if item == search_item:
+            return index
 
 items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
 
